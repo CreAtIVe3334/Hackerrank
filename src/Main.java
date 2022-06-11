@@ -32,10 +32,17 @@ public class Main {
         System.out.println("float: "+b);
         System.out.println("String: "+c);
     }
+    public static void loops1(){
+        int a = scan.nextInt();;
+        for (int i=1;i<11;i++){
+            System.out.println(i+"x"+a+"="+a*i);
+        }
+    }
     public static void main(String[] args) {
-        stdin_stdout();
-        ifElse();
-        stdin_stdout2();
-        output_formating();
+        //stdin_stdout();
+        //ifElse();
+        //stdin_stdout2();
+        //output_formating();
+        loops1();
     }
 }
