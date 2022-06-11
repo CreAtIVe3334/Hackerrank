@@ -8,6 +8,14 @@ public class Main {
         System.out.println("myString is: "+ st);
         System.out.println("myInt is: "+a);
     }
+    public static void output_formating(){
+        String st = scan.next();
+        int a = scan.nextInt();;
+
+        System.out.println("=========================================");
+        System.out.println(st+"   "+ a);
+        System.out.println("=========================================");
+    }
     public static void ifElse(){
         int k = scan.nextInt();
         if(k%2==1|| (6<k&&k<20) ){
@@ -28,5 +36,6 @@ public class Main {
         stdin_stdout();
         ifElse();
         stdin_stdout2();
+        output_formating();
     }
 }
