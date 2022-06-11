@@ -38,11 +38,25 @@ public class Main {
             System.out.println(i+"x"+a+"="+a*i);
         }
     }
+    public static void loops2(){
+        int n = scan.nextInt();;
+        for (int i=0;i<n;i++){
+            int a = scan.nextInt();
+            int b = scan.nextInt();
+            int c = scan.nextInt();
+            for(int j=1;j<=c;j++){
+                a= (int) (a+b*Math.pow(b,j-1));
+                System.out.print(a+" ");
+            }
+        }
+    }
+
     public static void main(String[] args) {
         //stdin_stdout();
         //ifElse();
         //stdin_stdout2();
         //output_formating();
-        loops1();
+        //loops1();
+        loops2();
     }
 }
