@@ -24,6 +24,16 @@ public class Main {
             System.out.println("Not weird");
         }
     }
+    public static void format(){
+       int k = scan.nextInt();
+        for (int i = 0; i < k; i++) {
+            long n = scan.nextLong();
+            if(n<127&&n>-128) System.out.println("Byte");
+            if(n<(Math.pow(2,15)-1)&&n>-Math.pow(2,15)) System.out.println("short");
+            if(n<(Math.pow(2,31)-1)&&n>-Math.pow(2,31)) System.out.println("Int");
+            if(n<(Math.pow(2,63)-1)&&n>-Math.pow(2,63)) System.out.println("LOng");
+        }
+    }
     public static void stdin_stdout2(){
         int a= scan.nextInt();
         float b= scan.nextFloat();
@@ -57,6 +67,7 @@ public class Main {
         //stdin_stdout2();
         //output_formating();
         //loops1();
-        loops2();
+        //loops2();
+        format();
     }
 }
