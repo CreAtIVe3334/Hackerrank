@@ -60,7 +60,10 @@ public class Main {
             }
         }
     }
-
+    public static void end_of_life(){
+        for(int i = 1; scan.hasNext(); i++)
+        System.out.println(i + " " + scan.nextLine());
+    }
     public static void main(String[] args) {
         //stdin_stdout();
         //ifElse();
@@ -68,6 +71,7 @@ public class Main {
         //output_formating();
         //loops1();
         //loops2();
-        format();
+        //format();
+        end_of_life();
     }
 }
