@@ -4,7 +4,6 @@ public class Main {
     public static void stdin_stdout(){
         String st = scan.next();
         int a = scan.nextInt();;
-
         System.out.println("myString is: "+ st);
         System.out.println("myInt is: "+a);
     }
@@ -15,6 +14,15 @@ public class Main {
         System.out.println("=========================================");
         System.out.println(st+"   "+ a);
         System.out.println("=========================================");
+    }
+
+    public static void initializar(){
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+        if(a<=0||b<=0){
+            System.out.println("java.lang.Exception: Breadth and height must be positive");
+        }
+        else System.out.println(a*b);
     }
     public static void ifElse(){
         int k = scan.nextInt();
@@ -72,6 +80,7 @@ public class Main {
         //loops1();
         //loops2();
         //format();
-        end_of_life();
+        //end_of_life();
+        initializar();
     }
 }
