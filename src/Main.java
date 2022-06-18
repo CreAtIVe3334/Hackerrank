@@ -72,6 +72,14 @@ public class Main {
         for(int i = 1; scan.hasNext(); i++)
         System.out.println(i + " " + scan.nextLine());
     }
+    public static void intToString(){
+        int n = scan.nextInt();
+        if(n<=100&&n>=-100){
+            System.out.print("Good job");
+        }
+        else
+            System.out.print("Wrong answer");
+    }
     public static void main(String[] args) {
         //stdin_stdout();
         //ifElse();
@@ -81,6 +89,7 @@ public class Main {
         //loops2();
         //format();
         //end_of_life();
-        initializar();
+        //initializar();
+        intToString();
     }
 }
